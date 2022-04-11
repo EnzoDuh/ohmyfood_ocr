@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
     <title>ohmyfood</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -11,100 +18,116 @@
     <!-- loader -->
     <div class="loader"></div>
     <!-- main container -->
-    <main class="container">
-      <header>
-        <img class="logo" src="" alt="" />
-        <div>
-          <i class="icone"></i>
-          <input type="text" />
+    <main id="container">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="./MaquettesOhmyfood/images/logo/ohmyfood.png"
+          alt="logo ohmyfood"
+        />
+        <div class="header__input">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <input
+            class="header__inputfield"
+            type="text"
+            placeholder="Paris, Belleville"
+          />
         </div>
-        <aside>
-          <h2>Réservez le menu qui vous convient</h2>
-          <p></p>
-          <button class="btn" type="button">Explorer nos restaurants</button>
+        <aside class="intro">
+          <h2 class="intro__title">Réservez le menu qui vous convient</h2>
+          <p class="intro__description">
+            Découvrez des restaurants d'exception, selectionnés par nos soins.
+          </p>
+          <button class="btn intro__btn" type="button">
+            Explorer nos restaurants
+          </button>
         </aside>
       </header>
-      <nav>
-        <h2>Fonctionnement</h2>
-        <div>
-          <div>
+      <nav class="nav">
+        <h2 class="nav__title">Fonctionnement</h2>
+        <div class="nav__block">
+          <div class="nav__firstElement">
             <span class="">1</span>
             <i></i>
             <p>Choisissez un restaurant</p>
           </div>
-          <div>
+          <div class="nav__secondElement">
             <span class="">2</span>
             <i></i>
             <p>Composez votre menu</p>
           </div>
-          <div>
+          <div class="nav__thirdElement">
             <span class="">3</span>
             <i></i>
             <p>Dégustez au restaurant</p>
           </div>
         </div>
       </nav>
-      <section>
-        <h3>Restaurants</h3>
-        <div>
-          <aside>
-            <div>
-              <a href="">
-                <div></div>
+      <section class="mainSection">
+        <h3 class="mainSection__title">Restaurants</h3>
+        <div class="restaurantContainer">
+          <aside class="card">
+            <div class="card__block">
+              <a class="card__link" href="./1pallette_du_gout.html">
+                <div class="card__content">
+                  <h3 class="card__title">La palette du goût</h3>
+                  <p class="card__text">Ménilmontant</p>
+                </div>
               </a>
-              <div>
-                <i> </i>
-              </div>
+              <i class="card__icon"></i>
             </div>
           </aside>
-          <aside>
-            <div>
-              <a href="">
-                <div></div>
+          <aside class="card">
+            <div class="card__block">
+              <a class="card__link" href="./2note_enchantee.html">
+                <div class="card__content">
+                  <h3 class="card__title">La note enchantée</h3>
+                  <p class="card__text">Charonne</p>
+                </div>
               </a>
-              <div>
-                <i> </i>
-              </div>
+              <i class="card__icon"></i>
             </div>
           </aside>
-          <aside>
-            <div>
-              <a href="">
-                <div></div>
+          <aside class="card">
+            <div class="card__block">
+              <a class="card__link" href="./3a_la_francaise.html">
+                <div class="card__content">
+                  <h3 class="card__title">A la française</h3>
+                  <p class="card__text">Cité Rouge</p>
+                </div>
               </a>
-              <div>
-                <i> </i>
-              </div>
+              <i class="card__icon"></i>
             </div>
           </aside>
-          <aside>
-            <div>
-              <a href="">
-                <div></div>
+          <aside class="card">
+            <div class="card__block">
+              <a class="card__link" href="./4delice_des_sens.html">
+                <div class="card__content">
+                  <h3 class="card__title">Le délice des sens</h3>
+                  <p class="card__text">Folie-Méricourt</p>
+                </div>
               </a>
-              <div>
-                <i> </i>
-              </div>
+              <i class="card__icon"></i>
             </div>
           </aside>
         </div>
       </section>
-      <footer>
-        <div>
-          <h4>ohmyfood</h4>
-          <div>
-            <i></i>
-            <p></p>
+      <footer class="footer">
+        <div class="bottom">
+          <h4 class="bottom__title">ohmyfood</h4>
+          <div class="bottom__block">
+            <i class="bottom__icon"></i>
+            <p class="bottom__text">Proposer un restaurant</p>
           </div>
-          <div>
-            <i></i>
-            <p></p>
+          <div class="bottom__block">
+            <i class="bottom__icon"></i>
+            <p class="bottom__text">Devenir partenaire</p>
           </div>
-          <div>
-            <p></p>
+          <div class="bottom__block">
+            <p class="bottom__text">Mentions légales</p>
           </div>
-          <div>
-            <p></p>
+          <div class="bottom__block">
+            <p class="bottom__text">Contact</p>
           </div>
         </div>
       </footer>
