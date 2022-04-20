@@ -12,11 +12,17 @@
     />
 
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- loader -->
-    <div class="loader"></div>
+    <div class="loader">
+      <!--page loader-->
+      <div class="loader--firstForm"></div>
+      <div class="loader--secondForm"></div>
+      <div class="loader--thirdForm"></div>
+      <h1 class="loader__logo">ohmyfood</h1>
+    </div>
     <!-- main container -->
     <main id="container">
       <header class="header">
@@ -65,13 +71,13 @@
       </nav>
       <section class="mainSection">
         <h3 class="mainSection__title">Restaurants</h3>
-        <div class="restaurantContainer">
-          <aside class="card">
-            <div class="card__block">
-              <a class="card__link" href="./1pallette_du_gout.html">
-                <div class="card__content">
-                  <h3 class="card__title">La palette du goût</h3>
-                  <p class="card__text">Ménilmontant</p>
+        <div class="restaurants">
+          <aside class="restaurants__card">
+            <div class="restaurants__cardBlock">
+              <a class="restaurants__cardLink" href="./1pallette_du_gout.html">
+                <div class="restaurants__cardContent">
+                  <h3 class="restaurants__cardTitle">La palette du goût</h3>
+                  <p class="restaurants__cardText">Ménilmontant</p>
                 </div>
               </a>
               <i class="card__icon"></i>

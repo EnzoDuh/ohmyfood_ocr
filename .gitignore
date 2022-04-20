@@ -1,2 +1,6 @@
 __MACOSX/
 .sass-cache
+./dart-sass
+./MaquettesOhmyfood
+./pages.css.map
+./style.css.map
