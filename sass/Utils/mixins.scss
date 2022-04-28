@@ -1,0 +1,25 @@
+@mixin font {
+    font-family: 'roboto', sans-serif;
+}
+
+@mixin fontlogo {
+    font-family: 'Shrikhand', cursive;
+}
+
+@mixin mobile-only {
+    @media (max-width: map-get($breakPoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin pad-only {
+    @media (min-width: map-get($breakPoints, pad-min)) and (max-width: map-get($breakPoints, pad-max)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakPoints, desktop)) {
+        @content;
+    }
+}

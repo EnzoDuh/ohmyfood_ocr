@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["sass/css/pages.scss"],"names":[],"mappings":"AAAA;EACI","file":"pages.css"}
+{"version":3,"sourceRoot":"","sources":["sass/css/pages.scss","sass/Utils/variables.scss"],"names":[],"mappings":"AAEA;EACI,kBCHW","file":"pages.css"}
