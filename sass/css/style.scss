@@ -72,3 +72,434 @@ a {
         animation: spinloaderlogo 1500ms ease-in-out 1;
     }
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        width: 165px;
+        margin: 20px 0px 10px 0px;
+    }
+
+    &__input {
+        width: 100%;
+        height: 50px;
+        background-color: $input-backgroundColor;
+        box-shadow: inset 0 2px 5px darken($color: $input-backgroundColor, $amount: 12%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &__inputfield {
+        border: none;
+        background-color: $input-backgroundColor;
+        padding-left: 10px;
+        cursor: pointer;
+        display: flex;
+    }
+
+}
+
+::placeholder {
+    @include font();
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.intro {
+    width: 100%;
+    height: 230px;
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile-only() {
+        height: 288px;
+    }
+
+    &__title {
+        @include font();
+        font-size: 24px;
+        text-align: center;
+        margin: 35px 0px 0px 0px;
+
+        @include mobile-only() {
+            width: 250px;
+        }
+    }
+
+    &__description {
+        @include font();
+        font-size: 16px;
+        text-align: center;
+        width: 300px;
+        margin: 10px 0px 30px 0px;
+    }
+
+    &__btn {
+        @include font();
+        font-size: 14px;
+        width: 220px;
+        height: 50px;
+        cursor: pointer;
+        background: linear-gradient($secondaryColor, $primaryColor);
+        color: white;
+        border: 1px hidden;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 2px 5px darken($color: $input-backgroundColor, $amount: 20%);
+        transition: all 250ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.20);
+            box-shadow: 0 4px 5px darken($color: $input-backgroundColor, $amount: 35%);
+            background: linear-gradient(lighten($color: $secondaryColor, $amount: 3%), lighten($color: $primaryColor, $amount: 3%));
+        }
+    }
+}
+
+.fa-map-marker {
+    padding: 0px 20px 0px 55px;
+}
+
+.nav {
+    height: 180px;
+    margin-top: 45px;
+
+    @include mobile-only() {
+        height: 370px;
+        margin-left: 20px;
+    }
+
+    &__title {
+        @include font();
+        font-size: 20px;
+        margin: 0px;
+
+        @include pad-only() {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include desktop-only() {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__block {
+        @include pad-only() {
+            display: flex;
+        }
+
+        @include desktop-only() {
+            display: flex;
+        }
+    }
+
+    &__element {
+        display: flex;
+        width: 31%;
+        height: 72px;
+        cursor: pointer;
+        margin: 25px 15px 0px 25px;
+        background-color: $backgroundColor;
+        border: 1px hidden;
+        border-radius: 18px 18px 18px 18px;
+        box-shadow: 0 2px 5px darken($color: $input-backgroundColor, $amount: 20%);
+        align-items: center;
+        transition: all 250ms ease-in-out;
+
+        @include mobile-only() {
+            width: 90%;
+            margin: 25px 0px 0px 12px;
+        }
+
+        &num {
+            @include font();
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            width: 25px;
+            height: 25px;
+            background-color: $primaryColor;
+            border: 1px hidden;
+            border-radius: 50%;
+            margin-left: -12px;
+        }
+
+        &text {
+            @include font();
+            font-size: 16px;
+            margin-left: 25px;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            background-color: lighten($color: $primaryColor, $amount: 35%);
+            box-shadow: 0 4px 5px darken($color: $input-backgroundColor, $amount: 40%);
+
+            &>i {
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+.fas.fa-list-ul,
+.fas.fa-mobile-alt,
+.fas.fa-store {
+    font-size: 20px;
+    margin-left: 15px;
+    color: $navIconColor;
+
+    @include mobile-only() {
+        margin-left: 20px;
+    }
+}
+
+.mainSection {
+    height: 400px;
+    background-color: $backgroundColor;
+
+    @include pad-only() {
+        height: 700px;
+    }
+
+    @include mobile-only() {
+        height: 1225px;
+        background-color: $backgroundColor;
+    }
+
+    &__title {
+        @include font();
+        font-size: 20px;
+        margin: 0px;
+        padding: 50px 0px 25px 0px;
+
+        @include pad-only() {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include desktop-only() {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include mobile-only() {
+            margin-left: 20px;
+            padding: 55px 0px 25px 0px;
+        }
+    }
+}
+
+.restaurants {
+    @include pad-only() {
+        display: flex;
+        justify-content: space-around;
+
+        &__1,
+        &__2 {
+            width: 45%;
+        }
+    }
+
+    @include desktop-only() {
+        display: flex;
+        justify-content: space-around;
+
+        &__1,
+        &__2 {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+    }
+
+    @include mobile-only() {
+        margin-left: 20px;
+    }
+
+    &__cards {
+        height: 250px;
+        background-color: white;
+        border: 1px hidden;
+        border-radius: 12px 12px 12px 12px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 5px darken($color: $input-backgroundColor, $amount: 20%);
+        transition: all 250ms;
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 5px darken($color: $input-backgroundColor, $amount: 40%);
+        }
+
+        @include desktop-only() {
+            width: 45%;
+        }
+
+        @include mobile-only() {
+            width: 94%;
+        }
+    }
+}
+
+.cardLink {
+    &__img {
+        width: 100%;
+        height: 175px;
+        border-radius: 12px 12px 0px 0px;
+        object-fit: cover;
+    }
+
+    &__new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font();
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        background-color: $tertiaryColor;
+        color: darken($color: $tertiaryColor, $amount: 30%);
+        position: relative;
+        left: 70%;
+        top: -165px;
+
+        &__no {
+            visibility: hidden;
+        }
+
+    }
+
+    &__title {
+        @include font();
+        font-size: 18px;
+        margin-left: 15px;
+        position: relative;
+        top: -28px;
+    }
+
+    &__text {
+        @include font();
+        font-size: 16px;
+        margin-left: 15px;
+        position: relative;
+        top: -23px;
+    }
+}
+
+.icon {
+    width: 20px;
+    font-size: 24px;
+    position: relative;
+    left: 85%;
+    top: -55px;
+    cursor: pointer;
+}
+
+.fas.fa-heart {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background: -webkit-linear-gradient($primaryColor, $secondaryColor);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+        animation: heart-coloration 500ms ease-in-out forwards;
+    }
+}
+
+.footer {
+    height: 200px;
+    background-color: $footerColor;
+
+    &__logo {
+        @include fontlogo();
+        font-size: 18px;
+        margin: 0px;
+        padding-top: 25px;
+        color: white;
+
+        @include pad-only() {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include desktop-only() {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include mobile-only() {
+            margin-left: 25px;
+        }
+    }
+
+    &__link1 {
+        @include font();
+        display: flex;
+        align-items: center;
+        margin: 10px 0px 0px 50px;
+        color: white;
+
+        @include mobile-only() {
+            margin-left: 25px;
+        }
+
+        &>p {
+            margin: 0px 0px 0px 15px;
+        }
+    }
+
+    &__link2 {
+        @include font();
+        display: flex;
+        align-items: center;
+        margin: 10px 0px 0px 50px;
+        color: white;
+
+        @include mobile-only() {
+            margin-left: 25px;
+        }
+
+        &>p {
+            margin: 0px 0px 0px 15px;
+        }
+    }
+
+    &__link3 {
+        @include font();
+        color: white;
+
+        &>p {
+            margin: 10px 0px 0px 50px;
+
+            @include mobile-only() {
+                margin-left: 25px;
+            }
+        }
+    }
+
+    &__link4 {
+        @include font();
+        color: white;
+
+        &>p {
+            margin: 10px 0px 0px 50px;
+
+            @include mobile-only() {
+                margin-left: 25px;
+            }
+        }
+    }
+}
