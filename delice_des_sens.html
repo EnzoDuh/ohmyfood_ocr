@@ -6,72 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./pages.css" />
     <title>ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/54e3fc1dc7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <main>
-      <header>
-        <div>
-          <a href=""> <i> </i></a>
-          <img src="" alt="logo" />
+    <main id="container">
+      <header class="head">
+        <div class="head__top">
+          <a class="head__topback" href="index.html"><i class="fas fa-arrow-left""></i></a>
+          <img class="head__toplogo" src="./public/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
         </div>
-        <img src="" alt="image plat" />
+        <img
+          class="head__img"
+          src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+          alt="plat délice des sens"
+        />
       </header>
-      <section>
-        <header>
-          <h1>Délice des sens</h1>
-          <i></i>
+      <section class="menu">
+        <header class="menu__head">
+          <h1 class="menu__headtitle">Le délice des sens</h1>
+          <div class="menu__icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
+          </div>
         </header>
-        <div>
-          <aside>
-            <h2></h2>
-            <article>
-              <h3></h3>
-              <div>
-                <p></p>
-                <p></p>
-              </div>
+        <div class="articles">
+          <aside class="starters">
+            <h2 class="starters__title">ENTRÉES</h2>
+           <article class="starters__art fadein1">
+            <h3 class="starters__arttitle">Tartare de thon</h3>
+            <div class="starters__div">
+              <p class="starters__description">Assaisonné au yuzu</p>
+              <p class="starters__price">25€</p>
+            </div>
+              <span class="starters--check"><i class="fas fa-check-circle"></i></span>
             </article>
+            <article class="starters__art fadein2">
+                <h3 class="starters__arttitle">Bouchée de homard croustillant</h3>
+                <div class="starters__div">
+                    <p class="starters__description">Et sa farandole de petits légumes</p>
+                    <p class="starters__price">35€</p>
+                </div>
+                  <span class="starters--check"><i class="fas fa-check-circle"></i></span>
+              </article>
+              <article class="starters__art fadein3">
+                  <h3 class="starters__arttitle">Velouté de cèpes</h3>
+                  <div class="starters__div">
+                      <p class="starters__description">Aux truffes</p>
+                      <p class="starters__price">20€</p>
+                  </div>
+                  <span class="starters--check"><i class="fas fa-check-circle"></i></span>
+              </article>
           </aside>
-          <aside>
-            <h2></h2>
-            <article>
-              <h3></h3>
-              <div>
-                <p></p>
-                <p></p>
-              </div>
-            </article>
+          <aside class="dishes">
+              <h2 class="dishes__title">PLATS</h2>
+              <article class="dishes__art fadein1">
+                  <h3 class="dishes__arttitle">Poulet rôti aux herbes de provence</h3>
+                  <div class="dishes__div">
+                      <p class="dishes__description">Et sa crème de truffe</p>
+                      <p class="dishes__price">40€</p>
+                  </div>
+                  <span class="dishes--check"><i class="fas fa-check-circle"></i></span>
+              </article>
+              <article class="dishes__art fadein2">
+                  <h3 class="dishes__arttitle">Langouste rôtie</h3>
+                  <div class="dishes__div">
+                      <p class="dishes__description">Et ses légumes de saison</p>
+                      <p class="dishes__price">35€</p>
+                  </div>
+                  <span class="dishes--check"><i class="fas fa-check-circle"></i></span>
+              </article>
+              <article class="dishes__art fadein3">
+                  <h3 class="dishes__arttitle">Côte de boeuf angus</h3>
+                  <div class="dishes__div">
+                      <p class="dishes__description">Et sa purée de panais</p>
+                      <p class="dishes__price">44€</p>
+                  </div>
+                  <span class="dishes--check"><i class="fas fa-check-circle"></i></span>
+              </article>
           </aside>
-          <aside>
-            <h2></h2>
-            <article>
-              <h3></h3>
-              <div>
-                <p></p>
-                <p></p>
-              </div>
-            </article>
+          <aside class="dessert">
+              <h2 class="dessert__title">DESSERTS</h2>
+              <article class="dessert__art fadein1">
+                  <h3 class="dessert__arttitle">Farandole de desserts</h3>
+                  <div class="dessert__div">
+                      <p class="dessert__description">Du chef</p>
+                      <p class="dessert__price">18€</p>
+                  </div>
+                  <span class="dessert--check"><i class="fas fa-check-circle"></i></span>
+              </article>
+              <article class="dessert__art fadein2">
+                  <h3 class="dessert__arttitle">Crème brulée</h3>
+                  <div class="dessert__div">
+                      <p class="dessert__description">Revisité</p>
+                      <p class="dessert__price">22€</p>
+                  </div>
+                  <span class="dessert--check"><i class="fas fa-check-circle"></i></span>
+              </article>
+              <article class="dessert__art fadein3">
+                  <h3 class="dessert__arttitle">Tiramisu</h3>
+                  <div class="dessert__div">
+                      <p class="dessert__description">À la noisette</p>
+                      <p class="dessert__price">23€</p>
+                  </div>
+                  <span class="dessert--check"><i class="fas fa-check-circle"></i></span>
+              </article>
           </aside>
-        </div>
+       </div>
+       <button class="order__button" type="button">
+         <span class="order__buttontext">Commander</span>
+       </button>
       </section>
-      <button type="button">Commander</button>
-      <footer>
-        <div>
-          <h4>ohmyfood</h4>
+      <footer class="footer">
+        <h2 class="footer__logo">ohmyfood</h2>
+        <div class="footer__link">
           <div>
-            <i></i>
-            <p></p>
+            <a class="footer__link1" href="#">
+              <i class="fas fa-utensils"></i>
+              <p>Proposer un restaurant</p>
+            </a>
           </div>
           <div>
-            <i></i>
-            <p></p>
+            <a class="footer__link2" href="#">
+              <i class="fas fa-hands-helping"></i>
+              <p>Devenir partenaire</p>
+            </a>
           </div>
-          <div>
-            <p></p>
-          </div>
-          <div>
-            <p></p>
-          </div>
+          <a class="footer__link3" href="#">
+            <p>Mentions légales</p>
+          </a>
+          <a class="footer__link4" href="mailto:">
+            <p>Contact</p>
+          </a>
         </div>
       </footer>
     </main>
