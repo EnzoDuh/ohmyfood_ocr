@@ -103,3 +103,481 @@
 
 }
 
+.articles {
+    animation: fadein 0.5s ease-in-out;
+
+    @include pad-only() {
+        display: flex;
+    }
+
+    @include desktop-only() {
+        display: flex;
+    }
+}
+
+.fadein1 {
+    animation: fadein 2s ease-in-out;
+}
+
+.fadein2 {
+    animation: fadein 2.5s ease-in-out;
+}
+
+.fadein3 {
+    animation: fadein 3s ease-in-out;
+}
+
+.fadein4 {
+    animation: fadein 3.5s ease-in-out;
+}
+
+.starters {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin: 30px 0px 0px 14px;
+    animation: fadein 1s ease-in-out;
+
+    @include mobile-only() {
+        width: 96%;
+    }
+
+    &__title {
+        @include font();
+        font-size: 16px;
+        width: 40px;
+        margin: 0px 0px 0px 6px;
+        border-bottom: 4px solid $tertiaryColor;
+        padding-bottom: 5px;
+    }
+
+    &__art {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        overflow: hidden;
+        width: 93%;
+        height: 72px;
+        margin-top: 12px;
+        border: 1px hidden;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 2px 5px darken($color: $input-backgroundColor, $amount: 20%);
+        transition: all 250ms;
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 5px darken($color: $input-backgroundColor, $amount: 40%);
+        }
+
+        &:hover .fas.fa-check-circle {
+            transform: rotate(360deg);
+        }
+
+        &:hover .starters__price {
+            transition-duration: 502ms;
+            padding-right: 50px;
+        }
+
+        &:hover .starters--check {
+            right: -50px;
+            transform: translate(-50px);
+            opacity: 1;
+        }
+
+        &title {
+            @include font();
+            font-size: 16px;
+            margin: 15px 0px 5px 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    .fas.fa-check-circle {
+        text-align: center;
+        font-size: 2em;
+        color: #fff;
+        transition: transform 502ms ease-in-out;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    &__description {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        @include font();
+        font-size: 14px;
+        margin: 0px 0px 10px 10px;
+    }
+
+    &__price {
+        @include font();
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0px 10px 0px 0px;
+    }
+
+    &--check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiaryColor;
+        width: 10px;
+        border-radius: 0px 15px 15px 0px;
+        position: absolute;
+        padding: 20px;
+        top: 0px;
+        opacity: 0;
+        transition: transform 332ms ease-in-out;
+        z-index: -2;
+    }
+}
+
+.dishes {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin: 30px 0px 0px 14px;
+    animation: fadein 1.5s ease-in-out;
+
+    @include mobile-only() {
+        width: 96%;
+    }
+
+    &__title {
+        @include font();
+        font-size: 16px;
+        width: 40px;
+        margin: 0px 0px 0px 6px;
+        border-bottom: 4px solid $tertiaryColor;
+        padding-bottom: 5px;
+    }
+
+    &__art {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        overflow: hidden;
+        width: 93%;
+        height: 72px;
+        margin-top: 12px;
+        border: 1px hidden;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 2px 5px darken($color: $input-backgroundColor, $amount: 20%);
+        transition: all 250ms;
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 5px darken($color: $input-backgroundColor, $amount: 40%);
+        }
+
+        &:hover .fas.fa-check-circle {
+            transform: rotate(360deg);
+        }
+
+        &:hover .dishes__price {
+            transition-duration: 502ms;
+            padding-right: 50px;
+        }
+
+        &:hover .dishes--check {
+            right: -50px;
+            transform: translate(-50px);
+            opacity: 1;
+        }
+
+        &title {
+            @include font();
+            font-size: 16px;
+            margin: 15px 0px 5px 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    .fas.fa-check-circle {
+        text-align: center;
+        font-size: 2em;
+        color: #fff;
+        transition: transform 502ms ease-in-out;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    &__description {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        @include font();
+        font-size: 14px;
+        margin: 0px 0px 10px 10px;
+    }
+
+    &__price {
+        @include font();
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0px 10px 0px 0px;
+    }
+
+    &--check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiaryColor;
+        width: 10px;
+        border-radius: 0px 15px 15px 0px;
+        position: absolute;
+        padding: 20px;
+        top: 0px;
+        opacity: 0;
+        transition: transform 332ms ease-in-out;
+        z-index: -2;
+    }
+}
+
+.dessert {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin: 30px 0px 0px 14px;
+    animation: fadein 2s ease-in-out;
+
+    @include mobile-only() {
+        width: 96%;
+    }
+
+    &__title {
+        @include font();
+        font-size: 16px;
+        width: 40px;
+        margin: 0px 0px 0px 6px;
+        border-bottom: 4px solid $tertiaryColor;
+        padding-bottom: 5px;
+    }
+
+    &__art {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        overflow: hidden;
+        width: 93%;
+        height: 72px;
+        margin-top: 12px;
+        border: 1px hidden;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 2px 5px darken($color: $input-backgroundColor, $amount: 20%);
+        transition: all 250ms;
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 5px darken($color: $input-backgroundColor, $amount: 40%);
+        }
+
+        &:hover .fas.fa-check-circle {
+            transform: rotate(360deg);
+        }
+
+        &:hover .dessert__price {
+            transition-duration: 502ms;
+            padding-right: 50px;
+        }
+
+        &:hover .dessert--check {
+            right: -50px;
+            transform: translate(-50px);
+            opacity: 1;
+        }
+
+        &title {
+            @include font();
+            font-size: 16px;
+            margin: 15px 0px 5px 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    .fas.fa-check-circle {
+        text-align: center;
+        font-size: 2em;
+        color: #fff;
+        transition: transform 502ms ease-in-out;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    &__description {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        @include font();
+        font-size: 14px;
+        margin: 0px 0px 10px 10px;
+    }
+
+    &__price {
+        @include font();
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0px 10px 0px 0px;
+    }
+
+    &--check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiaryColor;
+        width: 10px;
+        border-radius: 0px 15px 15px 0px;
+        position: absolute;
+        padding: 20px;
+        top: 0px;
+        opacity: 0;
+        transition: transform 332ms ease-in-out;
+        z-index: -2;
+    }
+}
+
+.order {
+    &__button {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        width: 60%;
+        max-width: 300px;
+        height: 50px;
+        margin: 50px 0px 80px 0px;
+        background: linear-gradient($secondaryColor, $primaryColor);
+        border: 1px hidden;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 2px 5px darken($color: $input-backgroundColor, $amount: 20%);
+        transition: all 250ms;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 5px darken($color: $input-backgroundColor, $amount: 40%);
+        }
+
+        &text {
+            @include font();
+            font-size: 16px;
+            display: flex;
+            align-self: center;
+            color: white;
+        }
+    }
+}
+
+.footer {
+    a{
+        text-decoration: none;
+    }
+    height: 200px;
+    background-color: $footerColor;
+
+    &__logo {
+        @include fontlogo();
+        font-size: 18px;
+        margin: 0px;
+        padding-top: 25px;
+        color: white;
+
+        @include pad-only() {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include desktop-only() {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include mobile-only() {
+            margin-left: 25px;
+        }
+    }
+
+    &__link1 {
+        @include font();
+        display: flex;
+        align-items: center;
+        margin: 10px 0px 0px 50px;
+        color: white;
+
+        @include mobile-only() {
+            margin-left: 25px;
+        }
+
+        &>p {
+            margin: 0px 0px 0px 15px;
+        }
+    }
+
+    &__link2 {
+        @include font();
+        display: flex;
+        align-items: center;
+        margin: 10px 0px 0px 50px;
+        color: white;
+
+        @include mobile-only() {
+            margin-left: 25px;
+        }
+
+        &>p {
+            margin: 0px 0px 0px 15px;
+        }
+    }
+
+    &__link3 {
+        @include font();
+        color: white;
+
+        &>p {
+            margin: 10px 0px 0px 50px;
+
+            @include mobile-only() {
+                margin-left: 25px;
+            }
+        }
+    }
+
+    &__link4 {
+        @include font();
+        color: white;
+
+        &>p {
+            margin: 10px 0px 0px 50px;
+
+            @include mobile-only() {
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
