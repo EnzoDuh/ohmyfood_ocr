@@ -1,5 +1,231 @@
-body {
-  background-color: #9356DC;
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@keyframes heart-coloration {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes spinloader {
+  from {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+@keyframes spinloaderlogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-1080deg);
+  }
+  70% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(50);
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  0% {
+    transform: translate3d(0, 25px, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  margin-top: 10px;
+}
+.head__topback {
+  position: absolute;
+  left: 30%;
+  font-size: 20px;
+  color: black;
+}
+@media (max-width: 759px) {
+  .head__topback {
+    left: 22px;
+  }
+}
+.head__toplogo {
+  width: 165px;
+}
+.head__img {
+  width: 50%;
+  margin: 0px;
+  z-index: -1;
+}
+@media (min-width: 760px) and (max-width: 1299px) {
+  .head__img {
+    border: 1px hidden;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .head__img {
+    border: 1px hidden;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 759px) {
+  .head__img {
+    width: 100%;
+    height: 256px;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #F6F6F6;
+  border: 1px hidden;
+  border-radius: 38px 38px 0px 0px;
+  margin-top: -38px;
+}
+.menu__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34px;
+}
+@media (max-width: 759px) {
+  .menu__head {
+    justify-content: space-between;
+  }
+}
+.menu__headtitle {
+  font-family: "Shrikhand", cursive;
+  margin: 0px 0px 0px 18px;
+}
+
+.menu__icons {
+  margin-left: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+@media (max-width: 759px) {
+  .menu__icons {
+    margin: 0px 38px 0px 0px;
+  }
+}
+.menu__icons .fas.fa-heart {
+  position: relative;
+  left: -30px;
+  opacity: 0;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__icons .fas.fa-heart:hover {
+  animation: heart-coloration 500ms ease-in-out forwards;
 }
 
 /*# sourceMappingURL=pages.css.map */
