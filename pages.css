@@ -317,6 +317,7 @@ th {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-right: 50px;
 }
 .starters .fas.fa-check-circle {
   text-align: center;
@@ -417,6 +418,7 @@ th {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-right: 50px;
 }
 .dishes .fas.fa-check-circle {
   text-align: center;
@@ -517,6 +519,7 @@ th {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-right: 50px;
 }
 .dessert .fas.fa-check-circle {
   text-align: center;
